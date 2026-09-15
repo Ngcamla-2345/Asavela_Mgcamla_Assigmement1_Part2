@@ -804,7 +804,182 @@ td a:hover {
     background-color: #ffffff; /* Use a white active-link background. */
     color: var(--primary); /* Use the main colour for active-link text. */
 }
+/* Color Palette Variables */
+:root {
+  --primary-blue: #0f4c81;
+  --accent-teal: #00a896;
+  --dark-navy: #0a2540;
+  --text-dark: #2b2d42;
+  --text-muted: #555e68;
+  --bg-light: #f4f7f6;
+  --card-bg: #ffffff;
+}
 
+/* Section Wrapper */
+.about-overview {
+  padding: 60px 20px;
+  background-color: var(--bg-light);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title h2 {
+  font-size: 2.2rem;
+  color: var(--dark-navy);
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-teal);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.section-title p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Responsive Grid Layout */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Info Cards Styling */
+.info-card {
+  background-color: var(--card-bg);
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--primary-blue);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Icon Styling */
+.card-icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 168, 150, 0.1);
+  color: var(--accent-teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Card Typography */
+.info-card h3 {
+  font-size: 1.4rem;
+  color: var(--dark-navy);
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  color: var(--text-dark);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+/* Individual Card Accent Themes */
+.history-card {
+  border-top-color: var(--primary-blue);
+}
+
+.mission-card {
+  border-top-color: var(--accent-teal);
+}
+
+.vision-card {
+  border-top-color: var(--dark-navy);
+}
+
+/* Style the brand container to align the logo and text smoothly */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between logo and text */
+    color: #ffffff; /* Display the brand in white. */
+    font-size: 1.25rem; /* Make it larger than normal text. */
+    font-weight: bold; /* Emphasise the organisation name. */
+}
+
+/* Make the logo image small and proportional */
+.brand .logo,
+.logo {
+    width: 32px; /* Set a small, standard logo width */
+    height: 32px; /* Set height matching width */
+    object-fit: contain; /* Prevent the logo from stretching or distorting */
+    border-radius: 4px; /* Optional: smooth subtle corners on the image */
+}
+
+/* Arrange the main navigation links. */
+.site-nav {
+    display: flex; /* Place links in one row. */
+    gap: 0.35rem; /* Add a small gap between links. */
+}
+
+/* Style each link inside the main navigation. */
+.site-nav a {
+    padding: 0.7rem 0.9rem; /* Add clickable space inside each link. */
+    border-radius: 6px; /* Round the link corners. */
+    color: #ffffff; /* Display normal navigation text in white. */
+    font-weight: bold; /* Make navigation labels easy to identify. */
+}
+
+/* Apply when a mouse pointer is over a navigation link. */
+.site-nav a:hover {
+    background-color: var(--accent); /* Change to the accent background. */
+    color: var(--primary-dark); /* Use dark text for contrast. */
+    transform: translateY(-2px); /* Move the link slightly upward. */
+}
+
+/* Apply when a keyboard user selects a navigation link. */
+.site-nav a:focus-visible {
+    outline: 3px solid #ffffff; /* Draw a visible keyboard focus outline. */
+    outline-offset: 2px; /* Add space around the outline. */
+}
+
+/* Highlight the link for the page currently open. */
+.site-nav a[aria-current="page"] {
+    background-color: #ffffff; /* Use a white active-link background. */
+    color: var(--primary); /* Use the main colour for active-link text. */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .about-overview {
+    padding: 40px 15px;
+  }
+  
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+}
 
 /* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
