@@ -1,0 +1,65 @@
+# Changelog
+
+All notable changes to the **Marine Eco System** project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),  
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+---
+
+## [1.0.0] - 2026-09-17
+
+### Added
+- Initial release of the Marine Eco System website
+- **Home Page** (`index.html`) with project overview and featured marine initiatives
+- **About Page** with History, Mission Statement, and Vision Statement
+- **Services Page** showcasing:
+  - Coastal & Beach Cleanups
+  - Wildlife Rehabilitation Support
+  - Community Education & Outreach
+- **Enquiry Page** with detailed form for:
+  - Volunteer Sign-up
+  - General Enquiries
+  - Donations & Sponsorships
+  - Guided Marine Tours
+- **Contact Us Page** including:
+  - Postal and physical address
+  - Opening hours
+  - Google Maps embed (Summerstrand, Gqeberha)
+  - Contact form
+- Shared header navigation across all pages
+- Multi-column responsive footer with:
+  - Conservation links
+  - Get Involved section
+  - About the Trust links
+  - Contact details and social media icons
+  - Newsletter subscription form
+- Responsive CSS using Flexbox and CSS Grid
+- CSS Variables for consistent colour theming
+- Logo integration in the site header
+- Mobile-friendly breakpoints for tablets and phones
+
+### Technical
+- Pure HTML5 and CSS3 (no JavaScript frameworks)
+- Semantic HTML structure
+- Accessible navigation with ARIA labels
+- SVG social media icons (Facebook, Instagram, WhatsApp)
+
+---
+
+## Future Planned Updates
+
+### Planned
+- Form validation and backend integration for enquiry and contact forms
+- Image optimisation and additional project photo galleries
+- Dark mode / high-contrast theme option
+- Blog / Conservation News section
+- Multi-language support (English / isiXhosa)
+
+---
+
+**Marine Eco System**  
+Algoa Bay Marine Conservation Trust  
+Gqeberha, South Africa  
+© 2026 All Rights Reserved
+```
